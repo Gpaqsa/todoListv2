@@ -1,0 +1,25 @@
+.input-div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: relative;
+    top: 100px;
+    justify-content: center;
+    width: 100%;
+}
+
+
+.input-item {
+    font-size: 24px;
+    padding: 5px 10px;
+    width: 30rem;
+
+    box-shadow: 2px 1px 2px black;
+    margin: 0 40px;
+    outline: none;
+}
+
+.addTodoItemBtn{
+    font-size: 24px;
+    padding: 5px 10px;
+}
