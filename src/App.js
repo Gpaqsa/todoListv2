@@ -4,10 +4,10 @@ import TodoLists from './components/TodoLists';
 import { useState } from 'react';
 function App() {
   const [input, setInput] = useState("");
-
+  const [todos, setTodos] = useState([]);
   return (
     <div className="App">
-      <InputTodoForm setInput={setInput} />
+      <InputTodoForm todos={todos}  setTodos={setTodos} input={input} setInput={setInput}/>
       <TodoLists/>
     </div>
   );
