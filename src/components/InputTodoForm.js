@@ -2,8 +2,7 @@ import React from 'react'
 import { useState } from 'react';
 import "../style/inputTodoForm.css"
 
-const InputTodoForm = () => {
-  const [input, setInput] = useState("");
+const InputTodoForm = ({setInput}) => {
 
   const handleTaskInputChange = (e) => {
     setInput(e.target.value)
@@ -19,7 +18,7 @@ const InputTodoForm = () => {
   return (
     <form onSubmit={handleSubmit}>
       <div className='input-div'>
-        <input className="input-item" value={input} type='text' placeholder='New Note' onChange={handleTaskInputChange} />
+        <input className="input-item"  type='text' placeholder='New Note' onChange={handleTaskInputChange} />
         <div className='addButton-div'>
           <button className='addTodoItemBtn'>+</button>
         </div>
