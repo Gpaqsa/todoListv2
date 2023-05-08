@@ -8,7 +8,7 @@ function App() {
   return (
     <div className="App">
       <InputTodoForm todos={todos}  setTodos={setTodos} input={input} setInput={setInput}/>
-      <TodoLists todos={todos}/>
+      <TodoLists todos={todos} setTodos={setTodos}/>
     </div>
   );
 }
